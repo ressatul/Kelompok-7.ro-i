@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <!--layout-->
+<div
+    class="container d-flex justify-content-center align-items-center vh-100">
+<div class="card p-4 shadow-lg">
+    <h2 class="text-center mb-4">login</h2>
+    <div id="alert" class="alert alert-danger d-none" role="alert">
+        username atau password salah!
+    </div>
+    <form id="loginform">
+        <div class="mb-3">
+            <label for="username" class="form-label">username</label>
+            <input type="text" class="form-control" id="username" required/></label>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">password</label>
+            <input
+            type="password" 
+            class="form-control"
+            id="password"
+            required
+            />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">login</button>
+    </form>
+</div>
+</div>
+    <!--script bootstrap-->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+document
+        .getElementById("loginform")
+        .addEventListener("submit",function(event) {
+            event.preventDefault();
+            //data login statis
+            const staticUser = {
+                username:"rihana",
+                password:"123456",
+
+            };
+            //ambil nilai input
+            const usernameInput = document.getElementById("username").value;
+            const passwordInput = document.getElementById("password").value;
+            //cek username dan password
+            if(
+                usernameInput === staticUser.username&&
+                passwordInput === staticUser.password
+            ){
+                alert("login berhasil");
+                window.location.href ="index.html";
+            }else{
+                document.getElementById("alert").classList.remove("d-none")
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

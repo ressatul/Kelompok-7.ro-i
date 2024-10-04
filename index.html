@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/heroes.css" rel="stylesheet">
+<style>
+    body{ background-image: url();
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .bd-placehorder-img{
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+    @media (min-width:768x) {
+      .bd-placehorder-img-lg{
+        font-size: 3.5rem;
+      }
+    }
+    .overlay-dark::before{
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0,0.5);
+      z-index: 1;
+    }
+    </style>
+    </head>
+    <body>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PT.Saturnus</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">logout</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay-dark">
+              <img src="img/Untitled.jpg" style="width: 100%;">
+            </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Selamat Datang Di Website Kami.</h1>
+                <p class="opacity-75">PT. Saturnus-Indonesia</p>
+                <p><a class="btn btn-lg btn-primary" href="about.html">selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-dark">
+              <img src="img/Screenshot 2024-10-04 073442.png" width="100%">
+            </div>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Tentang Kami.</h1>
+                <p>Cari tahu lebih lengkap seputar PT.Saturnus </p>
+                <p><a class="btn btn-lg btn-primary" href="about.html">selengkapnya</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-dark">
+              <img src="img/Screenshot 2024-10-04 080809.png" style="width: 100%;">
+            </div>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Event Kami.</h1>
+                <p>Galeri acara PT.Saturnus</p>
+                <p><a class="btn btn-lg btn-primary" href="gallery.html">gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+                      
+    <div class="container mt-3">
+        <h2 class="text-center">tentang kami</h2>
+        <p class="text-center">
+          PT. Saturnus adalah sebuah perusahaan kecantikan dan cosmetik yg sudah terjamin sangat bagus dipakai.
+        </p>
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom text-center">Keunggulan Kami</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                    <img src="img/Screenshot 2024-10-03 075529.png" alt="" style="width: 100%; height: auto;">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Formula Unik</h3>
+                <p>Formula produk kosmetik ini  berbeda dengan produk kosmetik lainnya. Karna produk yang digunakan oleh kami 
+                  terbuat dari bahan alami terjaim cocok untuk semua kulit.
+                </p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                  <img src="img/Screenshot (5).png" alt="" style="width: 100%; height:auto;">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">R&D Berpengalaman</h3>
+                <p>Kami mampu mewujudkan konsep kosmetik dan skincare yang terjamin.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="img/Screenshot 2024-10-03 120047.png" alt="" style="width: 110%; height: auto;">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Jaminan Kualitas</h3>
+                <p>Kami hasilkan produk kecantikan yang sudah terjamin kualitas nya.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/about-1024x768.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
+                <p class="lead">PT.sturnus-Indonesia merupakan perusahaan kecantikan terbesar diJawa barat
+                  , Indonesia. Kami telah memproduksi banyak merek-merek Skincare dan Kosmetik unggulan tidak kurang dari 150 
+                  brand. Dibentuk dan dikembangkan oleh tenga ahli yang berpengalaman dan didukung dengan karyawan-karyawan muda yang memiliki semangat dan inovatif
+                  .</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact Us</h1>
+                <p class="col-lg-10 fs-4">Jikan anada masih memiliki pertanyaan yang belum terjawab, kami 
+                  dapat memberi layanan konsultasi dan jika belum paham bisa ditanyakan kembali kami siap menjawab nya 
+                  gratis bagi anda. jangan ragu hubungi kami 
+                  tim marketing kami sangat terbuka dan siap melayani semua kebutuhan anda akan produk kosmetik dan skincare
+                  yang berkualitas.</p>
+              </div>
+              <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3" style="background-color:rgb(249, 246, 246)">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                  <hr class="my-4">
+                  <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">&copy; 2024 Rihana</p>
+            </footer>
+          </div>
+          
+    </div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
